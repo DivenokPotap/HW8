@@ -7,10 +7,10 @@
     <title>Мій сайт</title>
     <link rel="stylesheet" href="/style.css">
 <style>
-    p:nth-child(7){
+   p:nth-child(7){
     color: green;
 }
-h3:nth-child(1){
+h3:first-of-type{
 color: pink;
 }
 #greycol{
@@ -28,6 +28,39 @@ table th, table td{
 }
 table{
     border-collapse: collapse;
+    cursor: pointer;
+}
+tr:nth-child(even){
+    background-color: green;
+    font-size: 23px;
+}
+tr:nth-child(odd){
+        background-color: blueviolet;
+        font-size: 23px;
+}
+tr:nth-child(3n){
+    background-color: blue;
+    font-size: 23px;
+}
+tr:nth-child(4n){
+    background-color: red;
+    font-size: 23px;
+}
+tr:last-child{
+    background-color: brown;
+}
+td:hover{
+    background-color: crimson;
+}
+a{
+    margin-left: 50px;
+}
+a:active{
+color: aqua;
+font-weight: bold;
+}
+a:focus{
+    font-size: larger;
 }
 </style>
 </head>
